@@ -1,0 +1,112 @@
+.main-header {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  /* border: 2px solid red; */
+}
+
+.header-bg-wallpaper {
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/bgImg.jpeg");
+  /* background-size: cover; */
+  background-attachment: fixed;
+}
+
+.header-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-family: var(--codeFont);
+  padding: 0rem var(--mainPaddingX);
+  /* border: 4px solid blue; */
+}
+
+.header-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(5px);
+}
+
+.header-card {
+  z-index: 2;
+}
+
+.header-card-title-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.giant-h1 {
+  font-size: 225px;
+  line-height: 165px;
+}
+
+.main-header-h2 {
+  font-size: 100px;
+  font-weight: 200;
+  line-height: 75px;
+}
+
+/* .main-header-h3 {
+  font-size: 65px;
+  line-height: 52.5px;
+  font-weight: 200;
+} */
+
+.header-caption-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.2rem;
+  /* gap: 2rem; */
+  margin-top: 1rem;
+  font-family: var(--codeFont);
+}
+
+.header-blurb {
+  text-transform: uppercase;
+  background: white;
+  padding: 0rem 1rem;
+  color: black;
+  text-shadow: none;
+  font-family: var(--codeFont);
+  /* font-family: var(--mainFont); */
+}
+
+@media screen and (max-width: 650px) {
+  .giant-h1 {
+    font-size: 165px;
+    line-height: 105px;
+  }
+
+  .main-header-h2 {
+    font-size: 75px;
+    font-weight: 200;
+    line-height: 60px;
+  }
+
+  .header-caption-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    font-size: 1rem;
+    /* gap: 2rem; */
+    margin-top: 1rem;
+    font-family: var(--codeFont);
+  }
+
+  .header-blurb {
+    font-size: 0.85rem;
+    /* white-space: nowrap; */
+  }
+}

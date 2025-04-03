@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainPaddingX: 7.5rem;
+  --quicksandfont: "Quicksand", sans-serif;
+  --sourcecodefont: "Source Code Pro", monospace;
+  --interfont: "Inter", sans-serif;
+  --darkblack: rgb(15, 20, 20);
+  --black: rgb(35, 40, 40);
+  --lightblack: rgb(65, 60, 60);
+  --white: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 7.6rem;
+}
+
+@media screen and (max-width: 1050px) {
+  :root {
+    --mainPaddingX: 3.5rem;
+  }
+  h1 {
+    font-size: 4.75rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  :root {
+    --mainPaddingX: 1.5rem;
+  }
+  h1 {
+    font-size: 3.75rem;
+  }
+  .desktop-tablet {
+    display: none;
+  }
+}

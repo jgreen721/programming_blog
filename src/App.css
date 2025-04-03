@@ -1,0 +1,15 @@
+.app {
+  --mainFont: var(--interfont);
+  --codeFont: var(--sourcecodefont);
+  background: linear-gradient(5deg, var(--darkblack), var(--black));
+  color: var(--white);
+  /* height: 300vh; */
+  /* font-family: "Times New Roman", Times, serif; */
+}
+
+.app-content {
+  max-width: 85rem;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+  min-height: 100vh;
+}
