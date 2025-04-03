@@ -81,8 +81,16 @@
 }
 
 @media screen and (max-width: 650px) {
+  .blog-section {
+    margin: 2.5rem 0;
+  }
+
+  .blog-header {
+    padding: 3rem 0;
+  }
   .code-section {
     flex-direction: column;
+    padding: 2rem 1.25rem;
   }
 
   .comments-column,
