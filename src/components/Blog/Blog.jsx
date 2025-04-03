@@ -3,6 +3,7 @@ import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css"; // Dark theme (optional)
 import "prismjs/components/prism-c";
 import { snippet } from './snippet';
+import { snippet2 } from './snippet2';
 import "./Blog.css"
 
 const Blog = () => {
@@ -41,6 +42,35 @@ const Blog = () => {
       </div>
       ))}
      </section>
+
+
+     <header className="blog-header">
+        <h1 className="header-h1">File Handling</h1>
+      </header>
+      <article className="description-section">
+        <p className="description-p">
+          Introducing ourselve to basic file handling operations such as reading, finding the size of and writing to files as well as creating permissions for our file.
+        </p>
+      </article>
+      <section className="code-section-parent">
+      {snippet2.map(step=>(
+      <div key={step.id} className="code-section">
+        <div className="code-column">
+          <pre className="code-snippet">
+            <code className={`language-${step.language}`}>
+              {/* {`#import <stdio.h>`} */}
+              {step.code}
+            </code>
+          </pre>
+        </div>
+        <div className="comments-column">
+          {/* <p>The first step, the 'beloved' import statement. This is telling the computer/chef which drawers/files we will be using.</p> */}
+          <p className="code-description">{step.description}</p>
+        </div>
+      </div>
+      ))}
+     </section>
+
 
 
     </section>
