@@ -5,10 +5,20 @@ export const snippet2 = {
   codesnippets: [
     {
       id: 1,
-      code: `#include <stdio.h>
-  #include <unistd.h>
-  #include <fcntl.h>
-  #include <stdlib.h>`,
+      fileTree: {
+        name: "file_io",
+        files: [
+          { id: 1, isFile: true, name: "main.c" },
+          { id: 2, isFile: true, name: "sample.txt" },
+        ],
+      },
+      description:
+        "Set up our project file structure with parent folder and our code file as well as our sample.txt file we will be reading from.",
+      language: "c",
+    },
+    {
+      id: 1,
+      code: `#include <stdio.h>\n#include <unistd.h>\n#include <fcntl.h>\n#include <stdlib.h>`,
       description:
         "Include necessary libraries: stdio for standard I/O, unistd for system calls, fcntl for file control options, and stdlib for memory management.",
       language: "c",

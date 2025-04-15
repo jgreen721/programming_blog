@@ -26,6 +26,10 @@ h1 {
   font-size: 7.6rem;
 }
 
+li {
+  list-style: none;
+}
+
 .mobile {
   display: none;
 }

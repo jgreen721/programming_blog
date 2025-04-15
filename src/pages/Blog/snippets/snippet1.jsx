@@ -5,13 +5,23 @@ export const snippet1 = {
   codesnippets: [
     {
       id: 1,
+      fileTree:{
+        name:"hello_world",
+        files:[{id:1,isFile:true,name:"main.c"}]
+      },
+      description:
+        "Set up our project file structure with parent folder and our code file.",
+      language: "c",
+    },
+    {
+      id: 2,
       code: `#include <stdio.h>`,
       description:
         "Include the standard I/O library, which provides functions like printf for output.",
       language: "c",
     },
     {
-      id: 2,
+      id: 3,
       code: `#include <stdio.h>
   
   int main(void)
@@ -23,7 +33,7 @@ export const snippet1 = {
       language: "c",
     },
     {
-      id: 3,
+      id: 4,
       code: `#include <stdio.h>
   
   int main(void)
@@ -36,14 +46,14 @@ export const snippet1 = {
       language: "c",
     },
     {
-      id: 4,
+      id: 5,
       code: `gcc helloworld.c`,
       description:
         "Compile the program using GCC (GNU Compiler Collection), which converts the source code into an executable file.",
       language: "shell",
     },
     {
-      id: 5,
+      id: 6,
       code: `./a.out
   Hello, World!`,
       description:
@@ -51,7 +61,7 @@ export const snippet1 = {
       language: "shell",
     },
     {
-      id: 6,
+      id: 7,
       code: `echo $? 
   0`,
       description:

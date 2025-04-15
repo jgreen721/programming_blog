@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react'
+import {Title,Description,CodeSection} from "./components"
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css"; // Dark theme (optional)
 import "prismjs/components/prism-c";
-import { snippet1 } from './snippet1';
-import { snippet2 } from './snippet2';
+import { snippet1 } from './snippets/snippet1';
+import { snippet2 } from './snippets/snippet2';
 import {useParams,Link} from "react-router-dom"
 import "./Blog.css"
 
@@ -18,7 +19,6 @@ const Blog = () => {
 
   const snippet = snippets[params.id-1].snippet;
 
-  console.log(snippet);
 
 
 
@@ -30,30 +30,12 @@ const Blog = () => {
       <div className="site-logo-link-div">
       <Link className="site-logo-link" to="/">0x4C-LL</Link>
       </div>
-      <header className="blog-header">
-        <h1 className="header-h1">{snippet.title}</h1>
-      </header>
-      <article className="description-section">
-        <p className="description-p">
-          {snippet.description}
-        </p>
-      </article>
+   
+      <Title title={snippet.title}/>
+      <Description description={snippet.description}/>
       <section className="code-section-parent">
       {snippet.codesnippets.map(step=>(
-      <div key={step.id} className="code-section">
-        <div className="code-column">
-          <pre className="code-snippet">
-            <code className={`language-${step.language}`}>
-              {/* {`#import <stdio.h>`} */}
-              {step.code}
-            </code>
-          </pre>
-        </div>
-        <div className="comments-column">
-          {/* <p>The first step, the 'beloved' import statement. This is telling the computer/chef which drawers/files we will be using.</p> */}
-          <p className="code-description">{step.description}</p>
-        </div>
-      </div>
+ <CodeSection step={step} key={step.id}/>
       ))}
      </section>
 

@@ -1,0 +1,35 @@
+.code-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.comments-column {
+  flex: 1.5;
+}
+
+.code-column {
+  flex: 2;
+}
+
+.code-snippet {
+  border-radius: 0.5rem;
+}
+
+.code-description:first-letter {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+}
+
+.file-tree {
+  list-style: none;
+  font-family: monospace;
+  /* padding-left: 1em; */
+  background: var(--lightblack);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.file-tree li {
+  margin: 0.3em 2rem;
+}

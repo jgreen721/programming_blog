@@ -1,0 +1,16 @@
+.description-section {
+  margin: 2rem;
+}
+
+.description-p {
+  line-height: 1.55rem;
+  font-size: 1.3rem;
+  width: clamp(65%, 750px, 100%);
+}
+
+.description-p:first-letter {
+  font-size: 3.5rem;
+  line-height: 45px;
+  margin-right: 0.5rem;
+  float: left;
+}
