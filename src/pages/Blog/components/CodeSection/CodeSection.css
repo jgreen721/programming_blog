@@ -31,5 +31,11 @@
   border-radius: 0.5rem;
 }
 .file-tree li {
-  margin: 0.3em 2rem;
+  margin: 0.3em 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .file-tree {
+    padding: 0.5rem;
+  }
 }

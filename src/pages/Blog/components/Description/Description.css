@@ -14,3 +14,19 @@
   margin-right: 0.5rem;
   float: left;
 }
+
+@media screen and (max-width: 650px) {
+  .description-section {
+    margin: 1rem 0;
+  }
+
+  .description-p {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
+  .description-p:first-letter {
+    font-size:2.5rem;
+    line-height:2.25rem;
+    margin-right:.25rem;
+}
