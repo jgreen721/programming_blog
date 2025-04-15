@@ -3,13 +3,21 @@
   --codeFont: var(--sourcecodefont);
   background: linear-gradient(5deg, var(--darkblack), var(--black));
   color: var(--white);
-  /* height: 300vh; */
-  /* font-family: "Times New Roman", Times, serif; */
+  font-family: var(--mainFont);
 }
 
 .app-content {
   max-width: 85rem;
   margin: 0 auto;
-  /* border: 2px solid black; */
-  min-height: 100vh;
+  position: relative;
+}
+
+.padded-parent-container {
+  padding: 2rem 5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .padded-parent-container {
+    padding: 1rem 3rem;
+  }
 }
